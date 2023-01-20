@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier2Android"]/race/baseHungerRate</xpath>
+		<value>
+			<baseHungerRate>1.2</baseHungerRate>
+		</value>
+	</Operation>
+
+</Patch>
