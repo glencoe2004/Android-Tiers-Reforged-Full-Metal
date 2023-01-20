@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef>
+		<defName>ATR_FM_HACLDisabled_T1</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<blocksSocialInteraction>true</blocksSocialInteraction>
+		<isBad>false</isBad>
+		<label>Optimized</label>
+		<defaultLabelColor>(0.68, 0.19, 0.71)</defaultLabelColor>
+		<description>This T1's drone core has been heavily modified and overclocked, resulting in increased performance.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>+0.15</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ATR_FM_HACLDisabled</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<blocksSocialInteraction>true</blocksSocialInteraction>
+		<isBad>false</isBad>
+		<label>Emotionless</label>
+		<defaultLabelColor>(0.68, 0.19, 0.71)</defaultLabelColor>
+		<description>Significant optimizations to the underlying code of the AGI inhabiting this body, such as disabling the Human-AI Compatibility Layer, have resulted in increased performance. However, the seemingly emotionless performance state inherent to AGIs with no Compatibility Layer creeps most people out, and they refuse to regard this android with anything but disgust and hostility.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>-0.99</SocialImpact>
+					<GlobalLearningFactor>+0.1</GlobalLearningFactor>
+					<WorkSpeedGlobal>+0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

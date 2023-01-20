@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- However, they still manage to pop up on even advanced glitterworlds, used as disposable shock troops or domestic servants. -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/description</xpath>
+		<value>
+			<description>Tier one androids are simply humanlike-machines, designed to mimic the general image and minimal capabilities of humanity. Lacking true sapience, many view them like very intelligent and responsive animals. This often leads to their exploitation as fodder or belittlement as pets, of which the dutiful drones pay no heed. Their existence is to serve, and they do so uncomplainingly.\nDue to primitive design, tier one androids suffer from maintenance and efficiency flaws, leaving them relatively obsoleted by later, more durable, iterations.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/statBases/WorkSpeedGlobal</xpath>
+		<value>
+			<WorkSpeedGlobal>0.55</WorkSpeedGlobal>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/statBases/ATR_MaintenanceRetention</xpath>
+		<value>
+			<ATR_MaintenanceRetention>0.7</ATR_MaintenanceRetention>
+		</value>
+	</Operation>
+
+</Patch>

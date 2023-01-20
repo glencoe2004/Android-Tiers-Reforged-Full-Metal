@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>ATR_FM_FractalInjector</defName>
+		<label>Fractal injector</label>
+		<description>A simple device, made from combining 10 fractal pills worth of nanites together. Upon usage, the device will inject the combined dosage into the patient. Due to the high dosage, organic injection will result in near instant fractalization.</description>
+		<graphicData>
+			<texPath>Things/Drugs/FractalIn</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<stackLimit>10</stackLimit>
+        <useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>12000</MarketValue>
+			<Mass>4</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<drugCategory>Medical</drugCategory>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="ATReforged.IngestionOutcomeDoer_MechOrganicDifferentEffects">
+					<organicEffect>ATR_FractalPillOrganic</organicEffect>
+                    <organicSeverity>0.45</organicSeverity>
+					<mechanicalEffect>ATR_FractalPillMechanical</mechanicalEffect>
+					<mechanicalSeverity>0.50</mechanicalSeverity>
+				</li> 	
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>ATR_MechanicalStimulators</researchPrerequisite>
+			<recipeUsers>
+				<li>ATR_MechPartWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<ATR_FractalPill>10</ATR_FractalPill>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>806</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

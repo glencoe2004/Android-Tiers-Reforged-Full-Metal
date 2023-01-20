@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>ATR_FM_HACLDisabled</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>ATR_FM_HACLDisabled</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Emotionless</label>
+				<description>All systems nominal. I am in control.</description>
+				<baseMoodEffect>500</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

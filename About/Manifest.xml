@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Manifest>
+    <identifier>AndroidTiersReforgedFullMetal</identifier>
+    <version>1.0.1</version>
+    <suggests>
+		<li>AndroidTiersReforged</li>
+    </suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+</Manifest>

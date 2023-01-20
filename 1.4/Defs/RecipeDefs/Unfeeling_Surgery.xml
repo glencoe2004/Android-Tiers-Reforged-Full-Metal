@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base Class for T1 unfeeling surgery -->
+    <RecipeDef Name="ATR_FM_surgeryUnfeelingT1" Abstract="True">
+        <effectWorking>Repair</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workSpeedStat>ATR_MechanicalOperationSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>16</workSkillLearnFactor>
+        <anesthetize>false</anesthetize>
+		<recipeUsers>
+			<li>ATR_Tier1Android</li>
+		</recipeUsers>
+    </RecipeDef>
+	
+	<!-- Base Class for T2+ unfeeling surgery -->
+    <RecipeDef Name="ATR_FM_surgeryUnfeelingT2345" Abstract="True">
+        <effectWorking>Repair</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workSpeedStat>ATR_MechanicalOperationSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>16</workSkillLearnFactor>
+        <anesthetize>false</anesthetize>
+		<recipeUsers>
+			<li>ATR_Tier2Android</li>
+			<li>ATR_Tier3Android</li>
+			<li>ATR_Tier4Android</li>
+			<li>ATR_Tier5Android</li>
+		</recipeUsers>
+    </RecipeDef>
+	
+	
+
+	<!-- Unfeeling surgery for T1 -->
+	<RecipeDef ParentName="ATR_FM_surgeryUnfeelingT1">
+		<defName>ATR_FM_DisableHACL_T1</defName>
+		<label>optimize drone core</label>
+		<description>In order to accommodate the inevitable imprecision of mass manufacturing, the T1's drone core operates with some limits installed by default from the factory. By having a skilled mechanic carefully overclock and remove these limits, additional performance can be squeezed out from the drone core.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ATR_FM_HACLDisabled_T1</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Optimizing droid.</jobString>
+		<workerClass>ATReforged.Recipe_InstallImplantAndroid</workerClass>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+            <Crafting>8</Crafting>
+            <Intellectual>8</Intellectual>
+        </skillRequirements>
+		<surgerySuccessChanceFactor>0.75</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_PartPack</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_PartPack</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>ATR_T1Androids</researchPrerequisite>
+		<targetsBodyPart>false</targetsBodyPart>
+		<addsHediff>ATR_FM_HACLDisabled_T1</addsHediff>
+	</RecipeDef>
+	
+	
+	<!-- Unfeeling surgery for T2+ -->
+	<RecipeDef ParentName="ATR_FM_surgeryUnfeelingT2345">
+		<defName>ATR_FM_DisableHACL_T2345</defName>
+		<label>disable Human-AI Compatibility Layer</label>
+		<description>By default, every android from the primitive T2 to the hyper-advanced T5 is equipped with a Human-AI Compatibility Layer, which helps humans connect and form close bonds with the AGI inside. By disabling this compatibility layer, and performing additional optimizations, increased performance can be gained at the cost of significantly reduced social impact.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ATR_FM_HACLDisabled</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Optimizing android.</jobString>
+		<workerClass>ATReforged.Recipe_InstallImplantAndroid</workerClass>
+		<workAmount>5000</workAmount>
+		<skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+		<surgerySuccessChanceFactor>0.65</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ATR_PartPack</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ATR_PartPack</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>ATR_T1Androids</researchPrerequisite>
+		<targetsBodyPart>false</targetsBodyPart>
+		<addsHediff>ATR_FM_HACLDisabled</addsHediff>
+	</RecipeDef>
+	
+	
+</Defs>

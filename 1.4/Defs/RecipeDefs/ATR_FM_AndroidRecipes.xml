@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="ATR_AndroidMakerBase">
+		<defName>ATR_FM_CreateT1Android</defName>
+		<label>Create T1 Android</label>
+		<description>Create a blank T1 Android from Plasteel, Gold and Components.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<ATR_T1AndroidGenerator>1</ATR_T1AndroidGenerator>
+		</products>
+		<researchPrerequisite>ATR_T1Androids</researchPrerequisite>
+		<workAmount>16500</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ATR_AndroidMakerBase">
+        <defName>ATR_FM_CreateT2Android</defName>
+        <label>Create T2 Android</label>
+        <description>Create a blank T2 Android from Plasteel, Gold and Components.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <ATR_T2AndroidGenerator>1</ATR_T2AndroidGenerator>
+        </products>
+        <researchPrerequisite>ATR_T2Androids</researchPrerequisite>
+        <workAmount>18500</workAmount>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="ATR_AndroidMakerBase">
+        <defName>ATR_FM_CreateT3Android</defName>
+        <label>Create T3 Android</label>
+        <description>Create a blank T3 Android from Plasteel, Gold and advanced components.</description>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>175</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>16</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <products>
+            <ATR_T3AndroidGenerator>1</ATR_T3AndroidGenerator>
+        </products>
+        <researchPrerequisite>ATR_T3Androids</researchPrerequisite>
+        <workAmount>21500</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ATR_AndroidMakerBase">
+        <defName>ATR_FM_CreateT4Android</defName>
+        <label>Create T4 Android</label>
+        <description>Create a blank T4 Android from Plasteel, Gold and advanced components.</description>
+        <jobString>Making Android</jobString>  
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>200</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>24</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>AIPersonaCore</li>
+                </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <ATR_T4AndroidGenerator>1</ATR_T4AndroidGenerator>
+        </products>
+        <researchPrerequisite>ATR_T4Androids</researchPrerequisite>
+        <workAmount>25000</workAmount>
+    </RecipeDef>
+	
+</Defs>
