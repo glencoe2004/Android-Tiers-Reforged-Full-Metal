@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- However, they still manage to pop up on even advanced glitterworlds, used as disposable shock troops or domestic servants. -->
-
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/description</xpath>
 		<value>
@@ -21,6 +19,20 @@
 		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/statBases/ATR_MaintenanceRetention</xpath>
 		<value>
 			<ATR_MaintenanceRetention>0.7</ATR_MaintenanceRetention>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/race/baseHungerRate</xpath>
+		<value>
+			<baseHungerRate>1.25</baseHungerRate>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ATR_Tier1Android"]/race/baseBodySize</xpath>
+		<value>
+			<baseBodySize>0.8</baseBodySize>
 		</value>
 	</Operation>
 
